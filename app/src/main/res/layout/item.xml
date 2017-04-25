@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtLvName"
+        android:text="Nguyễn Văn A"
+        android:textSize="25dp"
+        android:textColor="#0000FF"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtLvName"
+        android:text="Thứ 2"
+        android:textSize="25dp"
+        android:textColor="#0000FF"
+        android:id="@+id/txtLvDay"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/txtLvDay"
+        android:id="@+id/txtLvExDay"
+        android:text="30 Ngày"
+        android:textSize="25dp"
+        android:textColor="#0000FF"/>
+</RelativeLayout>

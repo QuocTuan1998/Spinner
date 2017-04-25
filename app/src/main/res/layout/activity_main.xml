@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.quoctuan.spinner.MainActivity">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Tên nhân viên:"
+        android:textSize="25dp"
+        android:textColor="#F000"
+        android:id="@+id/txtNv"
+        />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtNv"
+        android:id="@+id/txtName"/>
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtName"
+        android:id="@+id/txtDayStart"
+        android:textSize="25dp"
+        android:textColor="#F000"
+        android:text="Chọn thứ bắt đầu đi công tác:"/>
+    <Spinner
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDayStart"
+        android:id="@+id/spDay">
+    </Spinner>
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/spDay"
+        android:text="Nhập số ngày công tác dự kiến"
+        android:textSize="25dp"
+        android:textColor="#F000"
+        android:id="@+id/txtExpectedDay" />
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtExpectedDay"
+        android:inputType="number"
+        android:id="@+id/txtDay"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/txtDay"
+        android:layout_marginLeft="120dp"
+        android:layout_centerInParent="true"
+        android:id="@+id/btnConfirm"
+        android:text="Xác nhận công tác"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/txtList"
+        android:layout_below="@+id/btnConfirm"
+        android:text="Danh sách nhân viên"
+        android:gravity="center"
+        android:textSize="25dp"
+        android:textColor="#F00"/>
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/txtList"
+        android:id="@+id/lvEmployee">
+
+    </ListView>
+
+</RelativeLayout>
